@@ -2,8 +2,8 @@ class FixedArray
 
 	attr_reader :array
 
-	def initialize(size)
-		@array = Array.new(size)
+	def initialize(size, content)
+		@array = Array.new(size, content)
 	end
 
 end

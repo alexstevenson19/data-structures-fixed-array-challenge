@@ -1,7 +1,7 @@
 require_relative 'fixed_array'
 
 describe FixedArray do
-	let(:new_array) { FixedArray.new(3) }
+	let(:new_array) { FixedArray.new(3, "hi") }
 
 	describe "fixed array size" do
 		it "should have a set length" do
