@@ -9,7 +9,7 @@ class FixedArray
 	def set(indx, value)
 		index_limit = @array.length - 1
 		if indx > index_limit
-		 #throw error
+		 raise RangeError, "out of bounds"
 	 else
 	 	@array[indx] = value
 	 end 
