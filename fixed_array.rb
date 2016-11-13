@@ -18,7 +18,7 @@ class FixedArray
 	def get(indx)
 		index_limit = @array.length - 1
 		if indx > index_limit
-		 #throw error
+		 raise RangeError, "out of bounds"
 	 else
 	 	@array[indx]
 	 end 

@@ -27,9 +27,13 @@ describe FixedArray do
 			expect(new_array.get(2)).to be greeting
 		end
 
-		it "raises an OutOfBounds error" do
-			# p new_array.set(5, "hi")
+		it "raises an OutOfBounds error on set method" do
 			expect{new_array.set(5, "hi")}.to raise_error(RangeError)
+		end
+
+
+		it "raises an OutOfBounds error on get method" do
+			expect{new_array.get(5)}.to raise_error(RangeError)
 		end
 	end
   
